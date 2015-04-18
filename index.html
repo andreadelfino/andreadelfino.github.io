@@ -1,0 +1,89 @@
+---
+layout: home
+---
+
+<div class="home">
+
+    <h2 class="home-heading">{{ site.description }}</h2>
+
+    <div class="home-col-wrapper">
+
+      <div class="home-col">
+        <ul class="contact-list">
+          <li>{{ site.title }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+
+      <div class="home-col">
+        <ul class="social-media-list nav nav-pills">
+
+          {% if site.github.username %}
+          <li>
+            <a href="https://github.com/{{ site.github.username }}" title="Andrea Delfino on GitHub" target="_blank">
+              <span class="icon icon--github fa fa-2x fa-github"></span>
+              <span class="username">{{ site.github.username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.twitter.username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter.username }}" title="Andrea Delfino on Twitter" target="_blank">
+              <span class="icon icon--twitter fa fa-2x fa-twitter"></span>
+              <span class="username">{{ site.twitter.username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.linkedin.username %}
+          <li>
+            <a href="https://www.linkedin.com/in/{{ site.linkedin.username }}" title="Andrea Delfino on LinkedIn" target="_blank">
+              <span class="icon icon--github fa fa-2x fa-linkedin"></span>
+              <span class="username">{{ site.linkedin.username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.facebook.username %}
+          <li>
+            <a href="https://facebook.com/{{ site.facebook.username }}" title="Andrea Delfino on Facebook" target="_blank">
+              <span class="icon icon--facebook fa fa-2x fa-facebook"></span>
+              <span class="username">{{ site.facebook.username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.flickr.username %}
+          <li>
+            <a href="https://www.flickr.com/people/{{ site.flickr.username }}" title="Andrea Delfino on Flickr" target="_blank">
+              <span class="icon icon--flickr fa fa-2x fa-flickr"></span>
+              <span class="username">{{ site.flickr.username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.lastfm.username %}
+          <li>
+            <a href="http://www.lastfm.it/user/{{ site.lastfm.username }}" title="Andrea Delfino on Last.fm" target="_blank">
+              <span class="icon icon--lastfm fa fa-2x fa-lastfm"></span>
+              <span class="username">{{ site.lastfm.username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.friendfeed.username %}
+          <li>
+            <a href="http://friendfeed.com/{{ site.friendfeed.username }}" title="Andrea Delfino on FriendFeed" target="_blank">
+              <span class="icon icon--comments icon--friendfeed fa fa-2x fa-comments fa-friendfeed"></span>
+              <span class="username">{{ site.friendfeed.username }}</span>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+    </div>
+
+</div>
+
