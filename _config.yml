@@ -2,7 +2,7 @@ title: Andrea Delfino
 email: andrea.delfino@gmail.com
 description: >
   So long and thanks for all the fish!
-url: "http://andreadelfino.it"
+url: "https://andreadelfino.it"
 baseurl: ""
 
 github:
@@ -17,9 +17,5 @@ flickr:
     username: andreadelfino
 lastfm:
     username: _shinji_
-friendfeed:
-    username: andreadelfino
 
 markdown: kramdown
-# markdown: redcarpet
-# highlighter: pygments

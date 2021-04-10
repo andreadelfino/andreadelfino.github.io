@@ -9,14 +9,16 @@ layout: home
     <div class="home-col-wrapper">
 
       <div class="home-col">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="home-col">
         <ul class="social-media-list nav nav-pills">
+
+          {% if site.email %}
+          <li>
+            <a href="mailto:{{ site.email }}" title="Andrea Delfino email contact" target="_blank">
+              <span class="icon icon--envelope fa fa-2x fa-envelope"></span>
+              <span class="username">{{ site.email }}</span>
+            </a>
+          </li>
+          {% endif %}
 
           {% if site.github.username %}
           <li>
